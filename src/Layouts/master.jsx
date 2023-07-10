@@ -5,7 +5,7 @@ export const MasterLayout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className="container py-4">{children}</main>
     </>
   );
 };
