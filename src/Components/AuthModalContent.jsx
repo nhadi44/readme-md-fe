@@ -11,8 +11,8 @@ export const AuthModalContent = ({ modalContent, signin, signup }) => {
     <>
       {modalContent === true ? (
         <>
-          <h1 className="text-center text-2xl font-semibold mb-10">Welcome back.</h1>
-          <div className="flex flex-col items-center gap-3 mb-5">
+          <h1 className="text-center text-2xl font-semibold mb-14">Welcome back.</h1>
+          <div className="flex flex-col items-center gap-3 mb-14">
             <div className="flex items-center gap-3 w-2/5 border border-1 border-slate-300 px-4 py-2 rounded-md transition ease-in hover:border-slate-500 hover:cursor-pointer">
               <img src={GoogleIcon} alt="signin-with-google" className="w-5" />
               <span className="text-[16px] text-slate-900 font-[400]">Sign in with Google</span>
@@ -34,7 +34,7 @@ export const AuthModalContent = ({ modalContent, signin, signup }) => {
             </div>
           </div>
 
-          <h1 className="text-center text-lg mb-5">
+          <h1 className="text-center text-lg mb-10">
             Not account?{" "}
             <span
               className="text-green-700 font-bold transition-all ease-in hover:text-green-800 hover:cursor-pointer"
@@ -53,8 +53,8 @@ export const AuthModalContent = ({ modalContent, signin, signup }) => {
         </>
       ) : (
         <>
-          <h1 className="text-center text-2xl font-semibold mb-10">Join Readme.md</h1>
-          <div className="flex flex-col items-center gap-3 mb-5">
+          <h1 className="text-center text-2xl font-semibold mb-14">Join Readme.md</h1>
+          <div className="flex flex-col items-center gap-3 mb-14">
             <div className="flex items-center gap-3 w-2/5 border border-1 border-slate-300 px-4 py-2 rounded-md transition ease-in hover:border-slate-500 hover:cursor-pointer">
               <img src={GoogleIcon} alt="signin-with-google" className="w-5" />
               <span className="text-[16px] text-slate-900 font-[400]">Sign up with Google</span>
@@ -71,7 +71,7 @@ export const AuthModalContent = ({ modalContent, signin, signup }) => {
             </div>
           </div>
 
-          <h1 className="text-center text-lg mb-5">
+          <h1 className="text-center text-lg mb-10">
             Already have an account?{" "}
             <span
               className="text-green-700 font-bold transition-all ease-in hover:text-green-800 hover:cursor-pointer"
