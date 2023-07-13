@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
+import { HomePageHero } from "../../Components/Hero/HomePageHero";
 
 export const HomePage = () => {
   const [title, setTitle] = useState("Readme.md - Where good ideas find you");
@@ -9,7 +11,10 @@ export const HomePage = () => {
 
   return (
     <>
-      <h1>Home Page</h1>
+      <HomePageHero />
+      <main className="container py-3">
+        <h1>Hello</h1>
+      </main>
     </>
   );
 };

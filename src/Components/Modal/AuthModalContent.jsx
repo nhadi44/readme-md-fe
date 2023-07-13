@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 
-import GoogleIcon from "../Assets/icons/google.png";
-import FacebookIcon from "../Assets/icons/facebook.png";
-import TwitterIcon from "../Assets/icons/twitter.png";
-import MailIcon from "../Assets/icons/email.png";
+import GoogleIcon from "../../Assets/icons/google.png";
+import FacebookIcon from "../../Assets/icons/facebook.png";
+import TwitterIcon from "../../Assets/icons/twitter.png";
+import MailIcon from "../../Assets/icons/email.png";
 
 export const AuthModalContent = ({ modalContent, signin, signup }) => {
   return (

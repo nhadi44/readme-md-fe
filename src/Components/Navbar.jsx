@@ -2,8 +2,8 @@ import { NavLink, useLocation } from "react-router-dom";
 import Markdown from "../Assets/icons/markdown.svg";
 import MarkdownWhite from "../Assets/icons/markdown-white.svg";
 import { useState } from "react";
-import { ModalComponent } from "./Modal";
-import { AuthModalContent } from "./AuthModalContent";
+import { ModalComponent } from "./Modal/Modal";
+import { AuthModalContent } from "./Modal/AuthModalContent";
 
 export const Navbar = () => {
   const pathname = useLocation().pathname;
@@ -71,11 +71,14 @@ export const Navbar = () => {
           <ul className="flex items-center gap-5">
             {pathname === "/creators" ? (
               <>
-                <li className="text-[16px] hover:text-slate-950 text-slate-900">
+                <li
+                  className="text-[16px] hover:text-slate-950 text-slate-900"
+                  onClick={togglesigninModal}
+                >
                   <div className="hover:cursor-pointer text-white">Sign In</div>
                 </li>
 
-                <li className="text-[16px]">
+                <li className="text-[16px]" onClick={toggleSignupModal}>
                   <div className="bg-slate-900 text-white py-2 px-3 rounded-md hover:bg-slate-950 hover:cursor-pointer">
                     Get Started
                   </div>
