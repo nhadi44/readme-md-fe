@@ -38,8 +38,10 @@ export const HomePageHero = () => {
       content={
         <>
           <div className="max-w-5xl py-16">
-            <h1 className="text-5xl font-bold mb-4">Become a Published Author.</h1>
-            <p className="py-6 text-lg mb-4">
+            <h1 className="text-4xl font-bold mb-4 md:text-5xl text-slate-900">
+              Become a Published Author.
+            </h1>
+            <p className="py-6 text-sm mb-4 text-slate-900 md:text-2xl">
               Realize your dream of becoming a published author. Write, edit, and publish your work
               on our platform, reaching a wide audience of readers and fellow writers. Start your
               writing journey and leave your mark

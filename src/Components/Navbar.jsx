@@ -44,7 +44,7 @@ export const Navbar = () => {
       <nav
         className={
           pathname === "/"
-            ? "bg-yellow-400 py-3 transition-all ease-in border-b-[1px] border-b-slate-900"
+            ? "bg-yellow-400 py-3 transition-all ease-in border-b-[1px] px-4 md:px- border-b-slate-900"
             : pathname === "/our-story"
             ? "bg-white py-3 transition-all ease-in border-b-[1px] border-b-slate-900"
             : "bg-red-500 py-3 transition-all ease-in border-b-[1px] border-b-slate-900"
@@ -86,7 +86,7 @@ export const Navbar = () => {
               </>
             ) : (
               <>
-                <li className="text-[16px] hover:text-slate-950 text-slate-900">
+                <li className="text-[16px] hover:text-slate-950 text-slate-900 hidden md:block">
                   <NavLink
                     to={"/our-story"}
                     className={pathname == "/our-story" ? "border-b-[1px] border-b-slate-900 " : ""}
@@ -95,12 +95,12 @@ export const Navbar = () => {
                   </NavLink>
                 </li>
 
-                <li className="text-[16px] hover:text-slate-950 text-slate-900">
+                <li className="text-[16px] hover:text-slate-950 text-slate-900 hidden md:block">
                   <NavLink to={"/creators"}>Write</NavLink>
                 </li>
 
                 <li
-                  className="text-[16px] hover:text-slate-950 text-slate-900"
+                  className="text-[16px] hover:text-slate-950 text-slate-900 hidden md:block"
                   onClick={togglesigninModal}
                 >
                   <div className="hover:cursor-pointer">Sign In</div>
