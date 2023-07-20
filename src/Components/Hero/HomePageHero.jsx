@@ -38,7 +38,7 @@ export const HomePageHero = () => {
       content={
         <>
           <div className="max-w-5xl py-16">
-            <h1 className="text-4xl font-bold mb-4 md:text-5xl text-slate-900">
+            <h1 className="text-4xl mt-20 font-bold mb-4 md:text-5xl text-slate-900">
               Become a Published Author.
             </h1>
             <p className="py-6 text-sm mb-4 text-slate-900 md:text-2xl">

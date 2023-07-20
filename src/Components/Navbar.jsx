@@ -1,11 +1,13 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import { NavLink, useLocation } from "react-router-dom";
 import Markdown from "../Assets/icons/markdown.svg";
 import MarkdownWhite from "../Assets/icons/markdown-white.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ModalComponent } from "./Modal/Modal";
 import { AuthModalContent } from "./Modal/AuthModalContent";
 
-export const Navbar = () => {
+export const Navbar = ({ isScroll, setBgColor }) => {
   const pathname = useLocation().pathname;
   const [signinModal, setsigninModal] = useState(false);
   const [modalContent, setModalContent] = useState(false);
@@ -44,7 +46,11 @@ export const Navbar = () => {
       <nav
         className={
           pathname === "/"
-            ? "bg-yellow-400 py-3 transition-all ease-in border-b-[1px] px-4 md:px- border-b-slate-900"
+            ? `${
+                setBgColor ? "bg-white " : "bg-yellow-400"
+              } fixed w-full py-3 transition-all duration-75 ease-in border-b-[1px] px-4 md:px- border-b-slate-900 ${
+                isScroll ? "z-50" : "block"
+              }`
             : pathname === "/our-story"
             ? "bg-white py-3 transition-all ease-in border-b-[1px] border-b-slate-900"
             : "bg-red-500 py-3 transition-all ease-in border-b-[1px] border-b-slate-900"
